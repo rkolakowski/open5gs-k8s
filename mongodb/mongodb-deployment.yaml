@@ -53,6 +53,7 @@ spec:
     - metadata:
         name: datadir
       spec:
+        storageClassName: local-path   # use the rancher local path provisioner
         accessModes:
           - "ReadWriteOnce"
         resources:
