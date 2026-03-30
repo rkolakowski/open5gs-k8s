@@ -53,7 +53,7 @@ spec:
     - metadata:
         name: datadir
       spec:
-        storageClassName: local-path   # use the rancher local path provisioner
+        storageClassName: local-path   # use the rancher local path provisioner kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
         accessModes:
           - "ReadWriteOnce"
         resources:
