@@ -12,3 +12,8 @@ spec:
   selector:
     app: open5gs
     nf: amf
+---
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceExport
+metadata:
+  name: amf-namf

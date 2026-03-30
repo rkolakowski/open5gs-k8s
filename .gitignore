@@ -23,3 +23,5 @@ msd/ueransim-gnb/
 msd/ueransim-ue/
 data/slices.yaml
 data/subscribers.yaml
+
+.idea

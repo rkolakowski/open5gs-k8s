@@ -14,3 +14,8 @@ spec:
   selector:
     app: open5gs
     nf: pcf
+---
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceExport
+metadata:
+  name: pcf-npcf

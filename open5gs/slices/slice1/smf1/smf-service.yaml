@@ -24,3 +24,8 @@ spec:
     app: open5gs
     nf: smf
     name: smf1
+---
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceExport
+metadata:
+  name: smf1-nsmf
