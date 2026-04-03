@@ -37,8 +37,8 @@ data:
       sbi:
         server:
           - dev: eth0
-            advertise: udm-nudm
+            advertise: udm-nudm.open5gs.svc.clusterset.local
             port: 80
         client:
           scp:
-            - uri: http://scp-nscp:80
+            - uri: http://scp-nscp.open5gs.svc.clusterset.local:80

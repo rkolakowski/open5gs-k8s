@@ -19,7 +19,7 @@ data:
       sbi:
         server:
           - dev: eth0
-            advertise: smf2-nsmf
+            advertise: smf2-nsmf.open5gs.svc.clusterset.local
             port: 80
         client:
           scp: 

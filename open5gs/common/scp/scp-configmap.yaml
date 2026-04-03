@@ -19,9 +19,9 @@ data:
       sbi:
         server:
           - dev: eth0
-            advertise: scp-nscp
+            advertise: scp-nscp.open5gs.svc.clusterset.local
             port: 80
         client:
           nrf:
-            - uri: http://nrf-nnrf:80
+            - uri: http://nrf-nnrf.open5gs.svc.clusterset.local:80
       no_sepp: true

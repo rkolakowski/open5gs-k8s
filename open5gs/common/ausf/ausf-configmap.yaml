@@ -17,8 +17,8 @@ data:
       sbi:
         server:
           - address: 0.0.0.0
-            advertise: ausf-nausf
+            advertise: ausf-nausf.open5gs.svc.clusterset.local
             port: 80
         client:
           scp:
-            - uri: http://scp-nscp:80
+            - uri: http://scp-nscp.open5gs.svc.clusterset.local:80

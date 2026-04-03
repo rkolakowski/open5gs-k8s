@@ -17,11 +17,11 @@ data:
       sbi:
         server:
           - dev: eth0
-            advertise: amf-namf
+            advertise: amf-namf.open5gs.svc.clusterset.local
             port: 80
         client:
           scp:
-            - uri: http://scp-nscp:80
+            - uri: http://scp-nscp.open5gs.svc.clusterset.local:80
       ngap:
         server:
           - address: 10.10.3.200

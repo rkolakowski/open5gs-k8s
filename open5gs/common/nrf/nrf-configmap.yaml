@@ -23,5 +23,5 @@ data:
       sbi:
         server:
           - dev: eth0
-            advertise: nrf-nnrf
+            advertise: nrf-nnrf.open5gs.svc.clusterset.local
             port: 80
