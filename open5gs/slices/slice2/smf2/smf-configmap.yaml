@@ -23,7 +23,7 @@ data:
             port: 80
         client:
           scp: 
-            - uri: http://scp-nscp:80
+            - uri: http://scp-nscp.open5gs.svc.clusterset.local:80
       pfcp:
         server:
           - dev: n4
