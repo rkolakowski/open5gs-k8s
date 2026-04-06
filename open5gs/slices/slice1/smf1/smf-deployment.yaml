@@ -32,7 +32,7 @@ spec:
           image: busybox:1.32.0
           env:
             - name: DEPENDENCIES
-              value: ausf-nausf:80
+              value: ausf-nausf.open5gs.svc.clusterset.local:80
           command:
             [
               "sh",
