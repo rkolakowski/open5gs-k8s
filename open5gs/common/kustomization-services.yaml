@@ -1,0 +1,10 @@
+resources:
+- amf/amf-service.yaml
+- ausf/ausf-service.yaml
+- nrf/nrf-service.yaml
+- scp/scp-service.yaml
+- nssf/nssf-service.yaml
+- pcf/pcf-service.yaml
+- udr/udr-service.yaml
+- udm/udm-service.yaml
+- bsf/bsf-service.yaml
