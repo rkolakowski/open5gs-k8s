@@ -22,7 +22,7 @@ spec:
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: udr-nudr:80
+          value: udr-nudr.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the UDR; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio

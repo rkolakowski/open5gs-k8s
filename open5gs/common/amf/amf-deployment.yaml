@@ -26,7 +26,7 @@ spec:
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: scp-nscp:80
+          value: scp-nscp.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the SCP; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio

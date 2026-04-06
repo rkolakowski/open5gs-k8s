@@ -14,3 +14,8 @@ spec:
   selector:
     app: ueransim
     component: gnb
+---
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: ServiceExport
+metadata:
+  name: gnb-service

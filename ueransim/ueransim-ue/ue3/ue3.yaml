@@ -20,7 +20,7 @@ imeiSv: '4370816125816151'
 
 # List of gNB IP addresses for Radio Link Simulation
 gnbSearchList:
-  - gnb-service
+  - gnb-service.open5gs.svc.clusterset.local
 
 # UAC Access Identities Configuration
 uacAic:

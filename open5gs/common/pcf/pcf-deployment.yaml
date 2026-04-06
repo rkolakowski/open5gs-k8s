@@ -22,13 +22,13 @@ spec:
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: smf1-nsmf:80
+          value: smf1-nsmf.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the SMF; sleep 2; done;"]
       - name: wait-smf2
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: smf2-nsmf:80
+          value: smf2-nsmf.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the SMF; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio

@@ -27,7 +27,7 @@ spec:
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: bsf-nbsf:80
+          value: bsf-nbsf.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the BSF; sleep 2; done;"]
       containers:
         - image: ghcr.io/niloysh/ueransim:v3.2.6

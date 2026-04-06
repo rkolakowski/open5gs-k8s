@@ -22,7 +22,7 @@ spec:
           image: busybox:1.32.0
           env:
             - name: DEPENDENCIES
-              value: mongodb:27017
+              value: mongodb.open5gs.svc.clusterset.local:27017
           command:
             [
               "sh",
@@ -41,7 +41,7 @@ spec:
             - name: GIN_MODE
               value: release
             - name: DB_URI
-              value: mongodb://mongodb/open5gs
+              value: mongodb.open5gs.svc.clusterset.local://mongodb/open5gs
             - name: NODE_ENV
               value: "production"
             - name: HOSTNAME

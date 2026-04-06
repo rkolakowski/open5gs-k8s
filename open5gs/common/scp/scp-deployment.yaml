@@ -22,13 +22,13 @@ spec:
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: mongodb:27017
+          value: mongodb.open5gs.svc.clusterset.local:27017
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the MongoDB; sleep 2; done;"]
       - name: wait-nrf
         image: busybox:1.32.0
         env:
         - name: DEPENDENCIES
-          value: nrf-nnrf:80
+          value: nrf-nnrf.open5gs.svc.clusterset.local:80
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the NRF; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio
@@ -40,7 +40,7 @@ spec:
         args: ["-c", "/open5gs/config/scpcfg.yaml"]
         env: 
           - name: DB_URI
-            value: mongodb://mongodb/open5gs
+            value: mongodb.open5gs.svc.clusterset.local://mongodb/open5gs
           - name: GIN_MODE
             value: release
         volumeMounts:
