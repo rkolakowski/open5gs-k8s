@@ -4,8 +4,17 @@ kind: Kustomization
 namespace: open5gs
 
 resources:
-  - common/kustomization-services.yaml
-  - slices/kustomization-services.yaml
+  - common/amf/amf-service.yaml
+  - common/ausf/ausf-service.yaml
+  - common/nrf/nrf-service.yaml
+  - common/scp/scp-service.yaml
+  - common/nssf/nssf-service.yaml
+  - common/pcf/pcf-service.yaml
+  - common/udr/udr-service.yaml
+  - common/udm/udm-service.yaml
+  - common/bsf/bsf-service.yaml
+  - slices/slice1/smf1/smf-service.yaml
+  - slices/slice2/smf2/smf-service.yaml
 
 images:
   - name: ghcr.io/niloysh/open5gs
